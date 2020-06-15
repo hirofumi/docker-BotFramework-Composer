@@ -41,7 +41,7 @@ RUN find . \( \
       -path './plugins/*' \
     \) -prune -o -mindepth 1 -delete
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1.300-alpine3.11
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1.301-alpine3.11
 
 COPY --from=builder /app /app
 
