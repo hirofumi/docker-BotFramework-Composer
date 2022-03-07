@@ -1,4 +1,4 @@
-FROM node:14.3.0-alpine3.11 as builder
+FROM node:16.13.0-alpine3.11 as builder
 
 RUN apk add --no-cache git
 RUN git clone --depth=1 -b v1.0.0 https://github.com/microsoft/BotFramework-Composer.git /app
